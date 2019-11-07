@@ -1,0 +1,43 @@
+$grid_cols : 12; 
+$max_width : 100%; 
+$col_1_width : $max_width / $grid_cols;
+
+.col-1 {
+  width: $col_1_width;
+}
+
+.offset-1 {
+  margin-left: $col_1_width;	
+}
+
+.col-2 {
+  width: $col_1_width * 2;
+}
+
+.offset-2 {
+  margin-left: $col_1_width * 2;
+}
+
+.col-3 {
+    width: $col_1_width * 3;
+}
+  
+.offset-3 {
+    margin-left: $col_1_width * 3;
+}
+
+.col-4 {
+    width: $col_1_width * 2;
+}
+      
+.offset-4 {
+    margin-left: $col_1_width * 2;
+}
+
+.col-5 {
+    width: $col_1_width * 3;
+}
+        
+.offset-5 {
+    margin-left: $col_1_width * 3;
+}
