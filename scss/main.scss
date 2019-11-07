@@ -1,0 +1,29 @@
+$grid_cols : 12; 
+$max_width : 100%; 
+$col_1_width : $max_width / $grid_cols;
+$offset_1_width : $max_width / $grid_cols;
+
+@for $i from 1 through $grid_cols {
+  .col-#{$i} {
+    width: $col_1_width * $i;
+  }
+}
+
+@for $i from 1 through $grid_cols {
+  .offset-#{$i} {
+    width: $offset_1_width * $i;
+  }
+}
+
+@mixin grid($type, $marginOrWidth, $size:false) {
+  @for $i from 1 through $grid_cols {
+    .#{$type}-#{$size}-#{$i} {
+      #{$marginOrWidth}: $col_1_width * $i;
+    }
+}
+}
+
+@media (min-width: 540px) {
+  @include grid('offset', "margin-right", 'sm');
+  @include grid('col', "width", 'sm');
+}

@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/GenchoApostolov/grid/issues"
   },
-  "homepage": "https://github.com/GenchoApostolov/grid#readme"
+  "homepage": "https://github.com/GenchoApostolov/grid#readme",
+  "devDependencies": {
+    "sass": "^1.23.3"
+  }
 }
